@@ -37,4 +37,4 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')));
 
 app.use(require("./routes")); // Usar arquivo de Rotas Separados "./" pasta atual
 
-server.listen(7777);
+server.listen(process.env.PORT || 7777);
